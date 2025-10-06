@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Опис бізнес логіки",
             left: [
                 { id: 'p1-1', label: 'Завдання системи' },
-                { id: 'p1-2', label: 'Основні бізнес правила' }
+                { id: 'p1-2', label: 'Можливості адміністратора' },
+                { id: 'p1-3', label: 'Можливості користувача' }
             ],
             content: {
                 'p1-1': {
@@ -20,15 +21,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
 
                 'p1-2': {
-                    title: 'Основні бізнес правила включають:',
+                    title: 'Адміністратор може:',
 
-                    html: '<p class="p-biz"> Додавання/редагування/видалення піци (name, ingredients, price) адміністратором.</p>' +
-                        '<p class="p-biz"> Додавання адміністратором зображення піци для більш естетичної привабливості продукту</p>' +
-                        '<p class="p-biz"> Оновлення адміністратором інгредієнтів певної піци у випадку додавання якоїсь “новинки”.</p>' +
-                        '<p class="p-biz"> Редагування адміністратором ціни піци упродовж робочого дня у випадку знижки.</p>' +
-                        '<p class="p-biz"> Видалення всіх записів про піцу в кінці робочого дня.</p>' +
-                        '<p class="p-biz"> Відслідковування та додавання даних про піци кожного дня для коритсувачів </p>' +
-                        '<p class="p-biz"> Щоденнний моніторинг погоди в містах із популярними філіалами.</p>'
+                    html: '<p class="p-biz"> Додавати/редагувати/видаляти піци (name, ingredients, price).</p>' +
+                        '<p class="p-biz"> Додавати зображення піци для більш естетичної привабливості продукту</p>' +
+                        '<p class="p-biz"> Оновлювати інгредієнти певної піци у випадку додавання якоїсь “новинки”.</p>' +
+                        '<p class="p-biz"> Редагування ціни піци упродовж робочого дня у випадку знижки.</p>' +
+                        '<p class="p-biz"> Видаляти всі записи про піцу в кінці робочого дня.</p>' +
+                        '<p class="p-biz"> Відслідковувати та додавати дані про піци кожного дня для користувачів </p>' +
+                        '<p class="p-biz"> Щоденнно моніторити погоду в містах із популярними філіалами.</p>' +
+                        '<p class="p-biz"> Переглядати саме меню піц та погоду на головному сайті.</p>'
+
+
+
+                },
+
+                'p1-3': {
+                    title: 'Користувач може:',
+
+                    html: '<p class="p-biz"> Аналізувати наведені погодні умови для свого міста.</p>' +
+                        '<p class="p-biz"> Адаптивно та зручно переглядати сторінки сайту на будь-якому пристрої.</p>' +
+                        '<p class="p-biz"> Ознайомлюватися з історією закладу.</p>' +
+                        '<p class="p-biz"> Ідентифіковувати найближчий філіал компанії.</p>' +
+                        '<p class="p-biz"> Надати відгук компанії через соціальні мережі.</p>' +
+                        '<p class="p-biz"> Переглядати саме меню піц та погоду на головному сайті.</p>'
+
                 },
             }
         },
@@ -47,25 +64,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 'p2-1': {
                     title: 'Можливості системи',
 
-                    html: '<p class="p-fr">Головна сторінка сайту містить навігаційне меню,' +
+                    html: '<p class="p-fr"> Система надає унікальну можливість тісної взаємодії між користувачем та адміністратором' +
+                        ' у вигляді прозорого додавання та оновлення асортименту продукції' +
+                        ' та легкості у її відслідковуванні користувачем протягом робочого дня.</p>' +
+                        '<p class="p-fr">Головна сторінка сайту містить навігаційне меню,' +
                         'яке дозволяє користувачам переходити на різні розділи сайту, такі як ' +
-                        'як "Про нас", "Наші піци", "Наші найбільші філіали" та "Контакт".</p>'+
+                        'як "Про нас", "Наші піци", "Наші найбільші філіали" та "Контакт".</p>' +
                         '<p class="p-fr">Секція "Про нас" надає коротку інформацію про компанію "Pizza Day", ' +
-                        'її історію та розміщення закладів. ' +
-                        'Це надає користувачам контекст про те, хто і що стоїть за брендом.</p>'+
+                        'її історію та розміщення закладів.' +
+                        'Це надає користувачам контекст про те, хто і що стоїть за брендом.</p>' +
 
                         '<p class="p-fr">Секція "Наше меню" використовує компонент PublicPizaList, який,  ' +
                         'відображає короткий список піц, доступних для замовлення. ' +
-                        'Це дозволяє користувачам попередньо ознайомитися з асортиментом піц перед відвідуванням магазину.</p>'+
+                        'Це дозволяє користувачам попередньо ознайомитися з асортиментом піц перед відвідуванням магазину.</p>' +
 
                         '<p class="p-fr">Секція "Наші найбільші філіали" містить зображення філіалів компанії в різних містах,  ' +
                         'а також їх розташування. ' +
-                        'Інформація про розташування допомагає користувачам знаходити найближчий до них магазин.</p>'+
+                        'Інформація про розташування допомагає користувачам знаходити найближчий до них магазин.</p>' +
 
                         '<p class="p-fr"> Компонент PublicWeatherWidget використовується для відображення погоди в найпопулярніших місцях,  ' +
                         'де знаходяться філіали цієї компанії, з використанням зовнішнього API. ' +
                         'Віджет може показувати загальний прогноз, стан неба та інші метеорологічні дані для заданих регіонів.</p>'
-                      },
+                },
 
 
 
@@ -118,20 +138,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-        p4: { 
-          title: "Діаграма UML", 
-          left: [
-              { id: 'p4-1', label: 'Тема' }
-              ], 
-              content: { 
-                'p4-1': { 
-                  title: 'Тема', 
+        p4: {
+            title: "Діаграма UML",
+            left: [
+                { id: 'p4-1', label: 'Діаграма UML' }
+            ],
+            content: {
+                'p4-1': {
+                    title: 'Діаграма UML',
 
-                  html: 
-                  '<div class="result-image"><img id="resultImage" src="img/17.png" alt="Моє фото"></div>' 
-                }, 
-             } 
-           },
+                    html: '<div class="result-image"><img id="resultImage" src="img/18.png" alt="Моє фото"></div>' +
+                        '<p class="p-result">Більш чітке зображення можна побачити за ' +
+                        '<a class="uml-link" href="https://drive.google.com/drive/folders/1CbUhsuqdjDwnLCZv2i1VhY77VKTn1Uli?usp=drive_link" target="_blank" rel="noopener noreferrer">посиланням</a>.' +
+                        '</p>'
+                },
+            }
+        },
 
 
 
@@ -141,19 +163,20 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Опис Frontend частини",
             left: [
                 { id: 'p5-1', label: 'Застосовані технології та структура компонентів', },
-                { id: 'p5-2', label: 'Загальний аналіз UI/UX' }
+                { id: 'p5-2', label: 'Загальний аналіз UI/UX' },
+                { id: 'p5-3', label: 'Секції головного сайту' },
             ],
             content: {
                 'p5-1': {
                     title: 'Застосовані технології та структура компонентів',
 
 
-                    html: '<p class="p-frontend">Майже всі компоненти та сам головний веб-сайт написані з використанням TypeScript на основі React.js з синтаксисом JSX.</p>' +
+                    html: '<p class="p-frontend">Стек технологій: React.JS та синтаксис JSX; Typescript; JavaScript; CSS;</p>' +
                         '<p class="p-frontend">СreatePizaForm - одна з головних частин адмін-панелі, яка відповідає за додавання піци та її елементів (name, ingredients, price). </p>' +
                         '<p class="p-frontend">PizaListItem у свою чергу забезпечує відображення списку піц та попередньо вказаних ендпоінтів у цій ж адмін-панелі.</p>' +
                         '<p class="p-frontend">Компонент PublicPizaList слугує "мостом" передачі меню піц від адміністратора до користувачів на головномус сайті.</p>' +
-                        '<p class="p-frontend">PublicWeatherWidget інтегрується із зовнішньою API погоди.</p>'+
-                        '<p class="p-frontend">Як вже було частково попередньо вказано, головний сайт index.tsx - це сердце компанії та ключова точка взаємодії між адміністрацією та споживачами.</p>'   
+                        '<p class="p-frontend">PublicWeatherWidget інтегрується із зовнішньою API погоди.</p>' +
+                        '<p class="p-frontend">Як вже було частково попередньо вказано, головний сайт index.tsx - це сердце компанії та ключова точка взаємодії між адміністрацією та споживачами.</p>'
                 },
 
 
@@ -162,13 +185,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     title: 'Загальний аналіз UI/UX',
 
 
-                    html: '<p class="p-frontend">Інтерфейс прагне до простоти: адаптивний дизайн, видимі кнопки та зрозуміла навігація.</p>'+
+                    html: '<p class="p-frontend">Інтерфейс прагне до простоти: адаптивний дизайн, видимі кнопки та зрозуміла навігація.</p>' +
                         '<p class="p-frontend"> Основний сценарій включає: відкриття меню → додавання адміністратором піци → користувач дивиться меню піц та погоду перед поїдкою у те чи інше місто філіалу.</p>' +
                         '<p class="p-frontend"> Всі секції та загальний текст "впадають в око", щоб користувачеві було легше сканувати сторінку.</p>' +
-                        '<p class="p-frontend"> При додванні піци до меню, система зручно повідомляє про типові та найпоширеніші помилки: неправильна ціна або ж незаповнення якогось поля.</p>'+
+                        '<p class="p-frontend"> При додванні піци до меню, система зручно повідомляє про типові та найпоширеніші помилки: неправильна ціна або ж незаповнення якогось поля.</p>' +
                         '<p class="p-frontend"> Так як всім відомо, що більшість взаємодії з сайтом проходить через мобільні пристрої, тому велику увагу було приділено саме цьому аспекту: переміщення елементів та тексту при зменншенні екрану; адаптація каруселі та меню філіалів під всю ширину екрану користувача.</p>'
 
-                },      
+                },
+
+                'p5-3': {
+                    title: 'Сторінки',
+
+
+                    html: '<div class="result-image"><img id="resultImage" src="img/19.jpg" alt="Моє фото"></div>'
+
+                },
 
             }
         },
@@ -185,11 +216,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     title: 'Основні технології',
 
 
-                    html: '<p class="p-backend">Для створення API також був застосований React.js з використанням мови Typescript, задля розширення можливостей JavaScript. Також, використовувалась база даних MySQL та сама мова запитів для взаємодії з нею.</p>' +
-                        '<p class="p-backend">API реалізовано з використанням типових HTTP-запитів: GET, POST, PUT та DELETE.</p>'+
-                        '<p class="p-backend">Були використані сутності такі як власна API та зовнішня API (PublicWeatherWidget).</p>'+
-                        '<p class="p-backend">Власна - взаємодія з базою даних MySQL та "записує туди данні піц певного дня".</p>'+
-                        '<p class="p-backend">Зовнішня ж використовує безкоштовний сервіс api.open-meteo.com для відслідковування та надання інформації про погоду.</p>'+
+                    html: '<p class="p-backend">Стек технологій: React.JS з частковим використанням Typescript; MySQL; API; мова HTTP-запитів.</p>' +
+                        '<p class="p-backend">API реалізовано з використанням типових HTTP-запитів: GET, POST, PUT та DELETE.</p>' +
+                        '<p class="p-backend">Були використані сутності такі як власна API та зовнішня API (PublicWeatherWidget).</p>' +
+                        '<p class="p-backend">Власна - взаємодія з базою даних MySQL та "записує туди данні піц певного дня".</p>' +
+                        '<p class="p-backend">Зовнішня ж використовує безкоштовний сервіс api.open-meteo.com для відслідковування та надання інформації про погоду.</p>' +
                         '<p class="p-backend">Відправлення, отримання та загальне тестування HTTP-запитів було реалізовано за допомогою API платформи "Postman".</p>'
                 },
 
@@ -223,20 +254,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 'p7-1': {
                     title: 'Заповнення полів для піци та її безпосереднє додавання до списку',
-                    html: 
-                        '<div class="result-image"><img id="resultImage" src="img/2.png" alt="Моє фото"></div>'+
+                    html: '<div class="result-image"><img id="resultImage" src="img/2.png" alt="Моє фото"></div>' +
                         '<p class="p-result">Натискаючи кнопку ADD, отримаємо:</p>' +
-                        '<div class="result-image"><img id="resultImage" src="img/3.png" alt="Моє фото"></div>'+
+                        '<div class="result-image"><img id="resultImage" src="img/3.png" alt="Моє фото"></div>' +
                         '<p class="p-result">Ми можемо змінити форму піци.</p>' +
-                        '<div class="result-image"><img id="resultImage" src="img/4.png" alt="Моє фото"></div>'+
-                        '<div class="result-image"><img id="resultImage" src="img/5.png" alt="Моє фото"></div>'+
-                        '<div class="result-image"><img id="resultImage" src="img/6.png" alt="Моє фото"></div>'+
+                        '<div class="result-image"><img id="resultImage" src="img/4.png" alt="Моє фото"></div>' +
+                        '<div class="result-image"><img id="resultImage" src="img/5.png" alt="Моє фото"></div>' +
+                        '<div class="result-image"><img id="resultImage" src="img/6.png" alt="Моє фото"></div>' +
                         '<p class="p-result">Або, натиснувши на відповідну кнопку, видалити її зі списку.</p>' +
-                        '<div class="result-image"><img id="resultImage" src="img/7.png" alt="Моє фото"></div>'+
+                        '<div class="result-image"><img id="resultImage" src="img/7.png" alt="Моє фото"></div>' +
                         '<p class="p-result">На основному сайті для користувачів ми можемо побачити цю піцу із доданим зображенням.</p>' +
-                        '<div class="result-image"><img id="resultImage" src="img/8.png" alt="Моє фото"></div>'+
+                        '<div class="result-image"><img id="resultImage" src="img/8.png" alt="Моє фото"></div>' +
                         '<p class="p-result">Також тут відображається погода в найпопулярніших місцях.</p>' +
-                        '<div class="result-image"><img id="resultImage" src="img/9.png" alt="Моє фото"></div>'   
+                        '<div class="result-image"><img id="resultImage" src="img/9.png" alt="Моє фото"></div>'
                 },
 
 
@@ -244,14 +274,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 'p7-2': {
                     title: 'Загальне відображення списку піц від адміна для користувача у певний день тижня',
-                    html: 
-                    '<p class="p-result">Загальне відображення списку піц від адміна для користувача у певний день тижня</p>'+
-                    '<div class="result-image"><img id="resultImage" src="img/10.png" alt="Моє фото"></div>'+
-                    '<div class="result-image"><img id="resultImage" src="img/11.png" alt="Моє фото"></div>'+
-                    '<div class="result-image"><img id="resultImage" src="img/12.png" alt="Моє фото"></div>'+
-                    '<div class="result-image"><img id="resultImage" src="img/13.png" alt="Моє фото"></div>'+
-                    '<div class="result-image"><img id="resultImage" src="img/14.png" alt="Моє фото"></div>'+
-                    '<div class="result-image"><img id="resultImage" src="img/15.png" alt="Моє фото"></div>'
+                    html: '<p class="p-result">Загальне відображення списку піц від адміна для користувача у певний день тижня</p>' +
+                        '<div class="result-image"><img id="resultImage" src="img/10.png" alt="Моє фото"></div>' +
+                        '<div class="result-image"><img id="resultImage" src="img/11.png" alt="Моє фото"></div>' +
+                        '<div class="result-image"><img id="resultImage" src="img/12.png" alt="Моє фото"></div>' +
+                        '<div class="result-image"><img id="resultImage" src="img/13.png" alt="Моє фото"></div>' +
+                        '<div class="result-image"><img id="resultImage" src="img/14.png" alt="Моє фото"></div>' +
+                        '<div class="result-image"><img id="resultImage" src="img/15.png" alt="Моє фото"></div>'
                 },
 
             }
@@ -272,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         'так як він покращує та змінює умови для користувачів на краще у вигляді поєднання “усього” на одному, не громіздкому сайті.</p>' +
                         '<p class="p-concl">З технічної точки зору реалізовано базові клієнтські компоненти та їхню взаємодію: карусель, адаптивне меню, список філіалів, компонент погодного віджету. ' +
                         'Це дозволяє розділити відповідальність між UI-компонентами і спростити роботу з API.' +
-                        'Розроблена стилістика та набір CSS-класів забезпечують читабельність інтерфейсу, а також взаємодію з ним.</p>'+
+                        'Розроблена стилістика та набір CSS-класів забезпечують читабельність інтерфейсу, а також взаємодію з ним.</p>' +
                         '<p class="p-concl"> Цей веб-додаток є неоціненним внеском у розвиток сфери швидкого харчування у будь-якій країні світу.</p>'
                 },
 
@@ -290,7 +319,14 @@ document.addEventListener('DOMContentLoaded', () => {
             content: {
                 'p9-1': {
                     title: 'Посилання',
-                    html: '<p class="p-links">пеаавувукуууу</p>'
+
+
+                    html: '<p class="p-links"><a class="links" href="https://github.com/Doloman040206/my-work.git" target="_blank" rel="noopener noreferrer">Посилання</a> на репозиторій веб-застосунку.</p>' +
+                        '<p class="p-links"><a class="links" href="тунель" target="_blank" rel="noopener noreferrer">Посилання</a> на загальний сайт веб-застосунку.</p>' +
+                        '<p class="p-links"><a class="links" href="тунель" target="_blank" rel="noopener noreferrer">Посилання</a> на адмін-панель веб-застосунку.</p>' +
+                        '<p class="p-links"><a class="links" href="https://github.com/Doloman040206/html-document.git" target="_blank" rel="noopener noreferrer">Посилання</a> на репозиторій звітного html-документу.</p>' +
+                        '<p class="p-links"><a class="links" href="https://doloman040206.github.io/html-document/" target="_blank" rel="noopener noreferrer">Посилання</a> на розгорнуту сторінку звітного html-документу. </p>' +
+                        '<p class="p-links"><a class="links" href="https://drive.google.com/drive/folders/1CbUhsuqdjDwnLCZv2i1VhY77VKTn1Uli?usp=drive_link" target="_blank" rel="noopener noreferrer">Посилання</a> на діаграму UML.</p>'
                 },
             }
         }
@@ -305,10 +341,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const contentBody = document.getElementById('contentBody');
     const landingCard = document.getElementById('landingCard');
 
-    let panelsVisible = false; 
+    let panelsVisible = false;
     let currentPractical = null;
 
-    
+
     const keys = Object.keys(PRACTICALS);
     keys.forEach((k) => {
         const btn = document.createElement('button');
@@ -385,13 +421,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     (function loadStudentPhoto() {
         const img = document.getElementById('studentPhoto');
-        const staticPath = 'img/1.jpg'; 
+        const staticPath = 'img/1.jpg';
         const tester = new Image();
         tester.onload = () => { img.src = staticPath; };
-        tester.onerror = () => { };
+        tester.onerror = () => {};
         tester.src = staticPath;
     })();
 
-    
+
     window.PRACTICALS = PRACTICALS;
 });

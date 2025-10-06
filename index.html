@@ -1,58 +1,55 @@
 <!doctype html>
 <html lang="uk">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Звіти з практичних робіт</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Звіти з практичних робіт</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- TOP BANNER -->
-  <header class="banner">
-    <div class="banner-inner">
-      <div class="banner-left">
-        <div class="uni">НТУУ "КИЇВСЬКИЙ ПОЛІТЕХНІЧНИЙ ІНСТИТУТ"</div>
-        <h1 class="main-title">ЗВІТИ З ПРАКТИЧНИХ РОБІТ (Комп'ютерного практикуму)</h1>
-        <div class="main-sub">з дисципліни <span class="discipline">«WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. ФРОНТЕНД РОЗРОБКИ»</span></div>
-        <div class="student-line">
-          <span class="discipline">Студент:</span> <span class="student-name">Доломан Максим Ігорович</span> &nbsp; | &nbsp; <span class="discipline">Група:</span> <span class="student-group">ІК-32</span>
+    <!-- TOP BANNER -->
+    <header class="banner">
+        <div class="banner-inner">
+            <div class="banner-left">
+                <div class="uni">НТУУ "КИЇВСЬКИЙ ПОЛІТЕХНІЧНИЙ ІНСТИТУТ"</div>
+                <h1 class="main-title">ЗВІТИ З ПРАКТИЧНИХ РОБІТ (Комп'ютерного практикуму)</h1>
+                <div class="main-sub">з дисципліни <span class="discipline">«WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ. ФРОНТЕНД РОЗРОБКИ»</span></div>
+                <div class="student-line">
+                    <span class="discipline">Студент:</span> <span class="student-name">Доломан Максим Ігорович</span> &nbsp; | &nbsp; <span class="discipline">Група:</span> <span class="student-group">ІК-32</span>
+                </div>
+            </div>
+            <div class="banner-right">
+                <!-- student photo (static) -->
+                <div class="student-photo-static">
+                    <img id="studentPhoto" alt="Фото студента">
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="banner-right">
-        <!-- student photo (static) -->
-        <div class="student-photo-static">
-          <img id="studentPhoto" alt="Фото студента">
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- TOP pills (practicals) -->
-  <nav class="practicals" aria-label="Практичні роботи">
-    <div id="practicalsContainer" class="practicals-row"></div>
-  </nav>
-
-  <!-- MAIN: left col (menu for chosen practical) + right content -->
-  <main class="main-grid">
-    <aside class="left-col hidden" id="leftCol" aria-label="Меню розділів">
-      <!-- JS will render left items here -->
-    </aside>
-
-    <section class="right-col" id="rightCol">
-      <!-- content area (hidden until first click) -->
-      <div class="content-card hidden" id="contentCard">
-        <h2 id="contentTitle">Оберіть практичну роботу</h2>
-        <div id="contentBody" class="content-body">
-        </div>
-      </div>
-
-      <!-- lightweight placeholder visible initially (replaces contentCard) -->
-      <div class="landing-card" id="landingCard">
-      </div>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+    </header>
+    <!-- TOP pills (practicals) -->
+    <nav class="practicals" aria-label="Практичні роботи">
+        <div id="practicalsContainer" class="practicals-row"></div>
+    </nav>
+    <!-- MAIN: left col (menu for chosen practical) + right content -->
+    <main class="main-grid">
+        <aside class="left-col hidden" id="leftCol" aria-label="Меню розділів">
+            <!-- JS will render left items here -->
+        </aside>
+        <section class="right-col" id="rightCol">
+            <!-- content area (hidden until first click) -->
+            <div class="content-card hidden" id="contentCard">
+                <h2 id="contentTitle">Оберіть практичну роботу</h2>
+                <div id="contentBody" class="content-body">
+                </div>
+            </div>
+            <!-- lightweight placeholder visible initially (replaces contentCard) -->
+            <div class="landing-card" id="landingCard">
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
+
 </html>
