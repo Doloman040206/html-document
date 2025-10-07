@@ -322,9 +322,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
                     html: '<p class="p-links"><a class="links" href="https://github.com/Doloman040206/my-work.git" target="_blank" rel="noopener noreferrer">Посилання</a> на репозиторій веб-застосунку.</p>' +
-                        '<p class="p-links"><a class="links" href="тунель" target="_blank" rel="noopener noreferrer">Посилання</a> на загальний сайт веб-застосунку.</p>' +
-                        '<p class="p-links"><a class="links" href="тунель" target="_blank" rel="noopener noreferrer">Посилання</a> на адмін-панель веб-застосунку.</p>' +
-                        '<p class="p-links"><a class="links" href="https://github.com/Doloman040206/html-document.git" target="_blank" rel="noopener noreferrer">Посилання</a> на репозиторій звітного html-документу.</p>' +
+                        '<p class="p-links"><a class="links" href="https://brown-ravens-say.loca.lt" target="_blank" rel="noopener noreferrer">Посилання</a> на загальний сайт веб-застосунку.</p>' +
+                        '<p class="p-links"><a class="links" href="https://brown-ravens-say.loca.lt/admin" target="_blank" rel="noopener noreferrer">Посилання</a> на адмін-панель веб-застосунку з паролем 84.40.219.25.</p>' +
+                        '<p class="p-links"><a class="links" href="https://github.com/Doloman040206/html-document.git" target="_blank" rel="noopener noreferrer">Посилання</a> на репозиторій звітного html-документу з паролем 84.40.219.25.</p>' +
                         '<p class="p-links"><a class="links" href="https://doloman040206.github.io/html-document/" target="_blank" rel="noopener noreferrer">Посилання</a> на розгорнуту сторінку звітного html-документу. </p>' +
                         '<p class="p-links"><a class="links" href="https://drive.google.com/drive/folders/1CbUhsuqdjDwnLCZv2i1VhY77VKTn1Uli?usp=drive_link" target="_blank" rel="noopener noreferrer">Посилання</a> на діаграму UML.</p>'
                 },
