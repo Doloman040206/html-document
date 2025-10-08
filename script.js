@@ -197,7 +197,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     title: 'Сторінки',
 
 
-                    html: '<div class="result-image"><img id="resultImage" src="img/19.jpg" alt="Моє фото"></div>'
+                    html: 
+                    '<div class="result-image"><img id="resultImage" src="img/19.jpg" alt="Моє фото"></div>'+
+                    '<div class="result-image"><img id="resultImage" src="img/20.jpg" alt="Моє фото"></div>'+
+                    '<div class="result-image"><img id="resultImage" src="img/21.jpg" alt="Моє фото"></div>'+
+                    '<div class="result-image"><img id="resultImage" src="img/13.png" alt="Моє фото"></div>'+
+                    '<div class="result-image"><img id="resultImage" src="img/14.png" alt="Моє фото"></div>'+
+                    '<div class="result-image"><img id="resultImage" src="img/15.png" alt="Моє фото"></div>'+
+                    '<div class="result-image"><img id="resultImage" src="img/23.jpg" alt="Моє фото"></div>'+
+                    '<div class="result-image"><img id="resultImage" src="img/24.jpg" alt="Моє фото"></div>'+
+                    '<div class="result-image"><img id="resultImage" src="img/25.jpg" alt="Моє фото"></div>'+
+                    '<div class="result-image"><img id="resultImage" src="img/26.jpg" alt="Моє фото"></div>'
 
                 },
 

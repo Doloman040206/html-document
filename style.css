@@ -569,7 +569,7 @@ body {
 }
 
 
-.content-card .content-body img[src$="19.jpg"] {
+.content-card .content-body .result-image img {
     display: block;
     margin: 24px auto;
     width: min(880px, 90%);
@@ -582,14 +582,14 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.content-card .content-body img[src$="19.jpg"]:hover {
+.content-card .content-body .result-image img:hover {
     transform: scale(1.05);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* Мобільна адаптація */
 @media (max-width:760px) {
-    .content-card .content-body img[src$="19.jpg"] {
+    .content-card .content-body .result-image img {
         width: min(92%, 320px);
         padding: 8px;
         margin: 16px auto;
